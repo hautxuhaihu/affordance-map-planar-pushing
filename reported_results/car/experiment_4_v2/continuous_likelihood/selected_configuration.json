@@ -1,0 +1,26 @@
+{
+  "protocol_version": "continuous_action_refinement_e4_v2",
+  "friction_cone": "elliptic",
+  "selected_backend_id": "candidate_a",
+  "likelihood_family": "multivariate_student_t",
+  "student_t_degrees_of_freedom": 3.0,
+  "points_per_dimension": 17,
+  "belief_update_horizon": 4,
+  "numerical_jitter": 1e-06,
+  "covariance_inflation": {
+    "friction": 8.0,
+    "com": 2.0,
+    "joint": 2.0
+  },
+  "all_scenarios_calibrated": true,
+  "test_outcomes_viewed": false,
+  "sequential_likelihood_tempering_method": "power_likelihood_log_likelihood_divided_by_temperature",
+  "sequential_likelihood_temperature": {
+    "friction": 1.5,
+    "com": 1.5,
+    "joint": 1.4
+  },
+  "on_policy_tempering_calibrated": true,
+  "on_policy_tempering_source": "closed_loop_validation_trajectories_before_tempering",
+  "test_trajectories_viewed": false
+}

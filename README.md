@@ -28,11 +28,15 @@ affordance-map-planar-pushing/
 ├── manifests/
 │   ├── hcr_v2/          Action, friction/COM and target-pose manifests
 │   └── car/             Continuous-refinement action and target splits
+├── reported_results/    Principal saved summaries used by the dissertation
 ├── src/push_core/       Shared simulation, prediction and evaluation code
-└── tests/hcr_v2/        Focused semantic tests for the HCR V2 implementation
+├── tests/hcr_v2/        Focused semantic tests for the HCR V2 implementation
+├── ARTIFACTS.md         Included, bundled and omitted artefacts
+├── ENVIRONMENT.md       Recorded software, CUDA and hardware environment
+└── REPRODUCE.md         Ordered commands for full regeneration
 ```
 
-Large datasets, trained checkpoints and generated result files are not included in this repository.
+Large MuJoCo datasets and complete decision-level results are not included in Git. The principal dissertation summaries are provided under `reported_results/`, and the GitHub release provides a compact model and likelihood bundle.
 
 ## Tested environment
 
@@ -43,7 +47,8 @@ Large datasets, trained checkpoints and generated result files are not included 
 - PyTorch 2.11.0
 - Matplotlib 3.10.8
 
-The exact Python dependencies used for the release are listed in `requirements.txt`.
+The Python package versions used by the public code are listed in `requirements.txt`.
+The recorded CUDA build and workstation configuration are listed in [ENVIRONMENT.md](ENVIRONMENT.md).
 
 ## Installation
 
@@ -84,18 +89,15 @@ python -X utf8 -m pytest -q tests\hcr_v2\test_e5.py
 ```text
 experiments/hcr_v2/run_e1.py   Object-motion prediction with supplied friction and COM
 experiments/hcr_v2/run_e2.py   Sequential friction and COM estimation
-experiments/hcr_v2/run_e3.py   Top-100 candidate selection using the Bayesian belief
-experiments/hcr_v2/run_e4.py   Ranked-first action evaluation
-experiments/hcr_v2/run_e5.py   Repeated discrete pushing
-```
-
-The cost-derived affordance-map analysis and repeated-pushing controller are provided in:
-
-```text
 experiments/hcr_v2/analyse_affordance_maps.py
+                               Probability-based affordance-map evaluation
 experiments/hcr_v2/plot_affordance_maps.py
+                               Plot saved affordance-map records
 experiments/hcr_v2/run_cost_derived_affordance_closed_loop.py
+                               Repeated pushing using the probability-based affordance map
 ```
+
+The `run_e3.py`, `run_e4.py` and `run_e5.py` modules remain because the formal scripts reuse their data-loading and controller components. They are not the reader-facing entry points for the final cost-derived affordance-map experiments.
 
 ### Continuous action refinement
 
@@ -108,6 +110,8 @@ experiments/car/run_e4_v2.py   Continuous refinement with unknown friction and C
 
 Run an entry point with `--help` to view its available commands and parameters. The complete formal experiments generate large intermediate datasets and can require substantial CPU, GPU and storage resources.
 
+The complete dependency order and fixed Validation-before-Test workflow are documented in [REPRODUCE.md](REPRODUCE.md).
+
 ## Data and generated results
 
 Experiment outputs are written under:
@@ -118,6 +122,8 @@ results/
 ```
 
 Both directories are ignored by Git. The included manifests define the action library, friction and COM settings, and target-pose splits required by the dissertation protocol.
+
+The principal saved summaries used by the dissertation are available under [`reported_results/`](reported_results/). The compact `affordance-map-planar-pushing-reproducibility-v1.0.zip` bundle and its checksum file are attached to release [`v1.0-dissertation`](https://github.com/hautxuhaihu/affordance-map-planar-pushing/releases/tag/v1.0-dissertation). See [ARTIFACTS.md](ARTIFACTS.md) for its scope and the boundary of the omitted data.
 
 ## Citation
 

@@ -1,0 +1,14 @@
+{
+  "protocol_version": "continuous_action_refinement_e3_v1",
+  "selection_role": "validation",
+  "eligible_candidate_budgets": [
+    128,
+    256,
+    512
+  ],
+  "selected_candidates_per_anchor": 128,
+  "promotion_margin": 0.05,
+  "anchors_per_target": 20,
+  "validation_stop_before_test": false,
+  "selection_rule": "validity>=0.99 and positive improvement CI; choose lowest mean cost, then the smallest eligible budget within 0.02"
+}

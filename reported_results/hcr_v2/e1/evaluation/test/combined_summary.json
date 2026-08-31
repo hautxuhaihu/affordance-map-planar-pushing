@@ -1,0 +1,3537 @@
+{
+  "protocol_version": "hcr_v2_e1_v2",
+  "friction_cone": "elliptic",
+  "environment_xml": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\assets\\xml\\msc_rod_pusher_box_hcr_v2.xml",
+  "role": "test",
+  "scenarios": [
+    "friction",
+    "com",
+    "joint"
+  ],
+  "scenario_summaries": [
+    {
+      "protocol_version": "hcr_v2_e1_v2",
+      "friction_cone": "elliptic",
+      "environment_xml": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\assets\\xml\\msc_rod_pusher_box_hcr_v2.xml",
+      "scenario": "friction",
+      "role": "test",
+      "conditions": 32,
+      "targets": 408,
+      "actions": 4536,
+      "predictors": [
+        "p0",
+        "p1",
+        "p2"
+      ],
+      "objectives": [
+        "v1",
+        "position_only",
+        "v2"
+      ],
+      "bootstrap_resamples": 10000,
+      "decision_metrics": [
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.17848274648931273,
+          "median": 0.12406316943701952,
+          "p90": 0.41566713050736964,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.14072582470516004,
+          "median": 0.09689723827021908,
+          "p90": 0.32255339957028745,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.03948951045337243,
+          "median": 0.023951737677829155,
+          "p90": 0.09144027627242382,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 1.389932360359402,
+          "median": 0.9775963314457567,
+          "p90": 3.418570724407089,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.18290441176470587,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.14720796827151847,
+          "median": 0.10998679350048217,
+          "p90": 0.35063312171951794,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.029872617826538807,
+          "median": 0.017215732664965646,
+          "p90": 0.07285391727350196,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.022670741079573117,
+          "median": 0.014546788299304069,
+          "p90": 0.05002568090379958,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.029872617826538807,
+          "median": 0.017215732664965646,
+          "p90": 0.07285391727350196,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 18.383990136682065,
+          "median": 11.280745128948114,
+          "p90": 46.09032654756302,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.11550245098039216,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.028204345294113628,
+          "median": 0.01609387707752278,
+          "p90": 0.06941880454058308,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 1.8935465017978543,
+          "median": 1.1753521551340012,
+          "p90": 4.611115803754869,
+          "mean_ci95_low": 1.6577116789557202,
+          "mean_ci95_high": 2.1409032350779085
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 1.0578191661657677,
+          "median": 0.6555162412822946,
+          "p90": 2.3668746643162595,
+          "mean_ci95_low": 0.8725614322669057,
+          "mean_ci95_high": 1.2735809217125291
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.030977490011955083,
+          "median": 0.019507767315073622,
+          "p90": 0.07400190839335806,
+          "mean_ci95_low": 0.02686470030755401,
+          "mean_ci95_high": 0.035277873430952095
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 3.4467200120010033,
+          "median": 1.2983447896339058,
+          "p90": 9.663461347647583,
+          "mean_ci95_low": 2.881348543729276,
+          "mean_ci95_high": 4.0554326732146455
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.07176776960784313,
+          "median": 0.0,
+          "p90": 0.0,
+          "mean_ci95_low": 0.05032169117647059,
+          "mean_ci95_high": 0.09528186274509803
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.26424632352941174,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.21453354779411765,
+          "mean_ci95_high": 0.3164866727941176
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 1.4242668007399562,
+          "median": 0.8665281910338236,
+          "p90": 3.5467416293291416,
+          "mean_ci95_low": 1.2170821943242776,
+          "mean_ci95_high": 1.6410917568643275
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.03786255259269681,
+          "median": 0.022013416330835762,
+          "p90": 0.1108040834338051,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.00010563080854413425,
+          "median": 0.0,
+          "p90": 0.00021669296709447622,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.03786255256526027,
+          "median": 0.02201341633069039,
+          "p90": 0.11080408343371584,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 2.743641202766622e-10,
+          "median": 2.5444437451708134e-14,
+          "p90": 1.3676385130293123e-10,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.2562040441176471,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.00010749895604729638,
+          "median": 1.3188332605716321e-05,
+          "p90": 0.00033793627144504835,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.007779429193913907,
+          "median": 0.00259225911586148,
+          "p90": 0.01580047428974554,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.0005775524469482192,
+          "median": 0.0,
+          "p90": 0.0017318937553050947,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.007779429193913907,
+          "median": 0.00259225911586148,
+          "p90": 0.01580047428974554,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 12.085558573798528,
+          "median": 9.322427014181084,
+          "p90": 27.38545052432207,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.3620557598039216,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.0006037800040226039,
+          "median": 0.00025383844932788126,
+          "p90": 0.0022404831736899562,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.8621046680577925,
+          "median": 0.40185664567434404,
+          "p90": 2.2791706950075006,
+          "mean_ci95_low": 0.7313022555734,
+          "mean_ci95_high": 1.005047804478356
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.026377332425705672,
+          "median": 0.0,
+          "p90": 0.08476751356771178,
+          "mean_ci95_low": 0.022385939527296565,
+          "mean_ci95_high": 0.0310263964126528
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.010086964821391509,
+          "median": 0.003802290256537024,
+          "p90": 0.027001887336065976,
+          "mean_ci95_low": 0.008306148991203641,
+          "mean_ci95_high": 0.012119456697035201
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 3.57756426988217,
+          "median": 1.9226342183351206,
+          "p90": 10.571098719467544,
+          "mean_ci95_low": 3.1059408812733196,
+          "mean_ci95_high": 4.0607343039918185
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.9178921568627451,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.90234375,
+          "mean_ci95_high": 0.9322150735294118
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.7158394607843137,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.6716452205882353,
+          "mean_ci95_high": 0.7601888020833333
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.02968836787562471,
+          "median": 0.016234574739584173,
+          "p90": 0.11845297990950288,
+          "mean_ci95_low": 0.024878852731264466,
+          "mean_ci95_high": 0.03482962320807345
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.14459465448241063,
+          "median": 0.12229782056290797,
+          "p90": 0.3117059492026807,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.10683773269825794,
+          "median": 0.08611846785110105,
+          "p90": 0.26701691570814257,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.0355013896109085,
+          "median": 0.016556400169099844,
+          "p90": 0.10571611904643373,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 1.0909326487150208,
+          "median": 0.9352838431460566,
+          "p90": 2.787333605937796,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.3046109068627451,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.10219780243199432,
+          "median": 0.089192079134114,
+          "p90": 0.26963234488934806,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.01015123420968066,
+          "median": 0.005309445697605085,
+          "p90": 0.01794041906512914,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.002949357462714973,
+          "median": 0.0022561358256393193,
+          "p90": 0.0068771621409073926,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.01015123420968066,
+          "median": 0.005309445697605085,
+          "p90": 0.01794041906512914,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 14.274821183668836,
+          "median": 11.401490066869247,
+          "p90": 28.931672163724144,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.26953125,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.0034714793497163947,
+          "median": 0.0031258902574043423,
+          "p90": 0.007947783802176605,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.9710760143090897,
+          "median": 0.515328436785165,
+          "p90": 2.3778482095478037,
+          "mean_ci95_low": 0.8362547936479329,
+          "mean_ci95_high": 1.1180817687397764
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.13534867867700298,
+          "median": 0.08750303288294481,
+          "p90": 0.34124893655743754,
+          "mean_ci95_low": 0.127414362463305,
+          "mean_ci95_high": 0.14375217775281432
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.011638647885748785,
+          "median": 0.005960616304682337,
+          "p90": 0.026110726856872886,
+          "mean_ci95_low": 0.00984849339843398,
+          "mean_ci95_high": 0.013654089952764445
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 3.8914362002165057,
+          "median": 1.9380405637817306,
+          "p90": 11.141386644878228,
+          "mean_ci95_low": 3.3909684478909505,
+          "mean_ci95_high": 4.404976578898417
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.5330116421568627,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.5094956341911765,
+          "mean_ci95_high": 0.5560661764705882
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.6608455882352942,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.6145833333333334,
+          "mean_ci95_high": 0.7083333333333334
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.1823959914220135,
+          "median": 0.16863386621500082,
+          "p90": 0.47832130486081265,
+          "mean_ci95_low": 0.15169438023166562,
+          "mean_ci95_high": 0.21296818255167388
+        }
+      ],
+      "outcome_prediction_metrics": [
+        {
+          "predictor": "p0",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 29.655082439754068,
+          "mean_ci95_low": 27.317053114620638,
+          "mean_ci95_high": 32.1096980661595
+        },
+        {
+          "predictor": "p0",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 18.403475738865367,
+          "mean_ci95_low": 16.981435721747257,
+          "mean_ci95_high": 19.91758343569569
+        },
+        {
+          "predictor": "p0",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 70.88993577280635,
+          "mean_ci95_low": 65.1835821904548,
+          "mean_ci95_high": 76.81687949970308
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 5.437145865549596,
+          "mean_ci95_low": 4.877629928495777,
+          "mean_ci95_high": 6.030504252997682
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 3.245951225115153,
+          "mean_ci95_low": 2.914466082494181,
+          "mean_ci95_high": 3.5930233502990387
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 13.539489521234657,
+          "mean_ci95_low": 11.954430215921048,
+          "mean_ci95_high": 15.150730504609657
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 45.091978714036586,
+          "mean_ci95_low": 41.70824289087954,
+          "mean_ci95_high": 48.60753528852853
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 47.92662420763306,
+          "mean_ci95_low": 43.99476915460688,
+          "mean_ci95_high": 52.113357530598726
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 14.413669951631434,
+          "mean_ci95_low": 12.741678803283095,
+          "mean_ci95_high": 16.326615056850272
+        },
+        {
+          "predictor": "p0",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 1.409512690485443,
+          "mean_ci95_low": 1.2392847597057668,
+          "mean_ci95_high": 1.5886217703084804
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 1.7641076043180735,
+          "mean_ci95_low": 1.5125758044659274,
+          "mean_ci95_high": 2.0458332383791364
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 0.9881236049854427,
+          "mean_ci95_low": 0.8397633191139163,
+          "mean_ci95_high": 1.1560922402885117
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 4.135264901121136,
+          "mean_ci95_low": 3.520293179695157,
+          "mean_ci95_high": 4.832102855944933
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 0.8686212916257554,
+          "mean_ci95_low": 0.8036111716687415,
+          "mean_ci95_high": 0.9361030369614468
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 0.41760782604287616,
+          "mean_ci95_low": 0.3819506010744573,
+          "mean_ci95_high": 0.4531535315395162
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 2.282766867958672,
+          "mean_ci95_low": 2.1013470537844614,
+          "mean_ci95_high": 2.470909474582325
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 45.091978714036586,
+          "mean_ci95_low": 41.70824289087954,
+          "mean_ci95_high": 48.60753528852853
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 3.69515569051225,
+          "mean_ci95_low": 3.2076324936699403,
+          "mean_ci95_high": 4.235284832361953
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 2.4328337344098676,
+          "mean_ci95_low": 2.176904130177797,
+          "mean_ci95_high": 2.7001465719352002
+        },
+        {
+          "predictor": "p1",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 0.1476162726052842,
+          "mean_ci95_low": 0.1302515312101735,
+          "mean_ci95_high": 0.16638340242522862
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 5.199962413908641,
+          "mean_ci95_low": 4.93065016533518,
+          "mean_ci95_high": 5.486925580631117
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 4.334851153098354,
+          "mean_ci95_low": 4.157385304980738,
+          "mean_ci95_high": 4.528410709334215
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 9.448125519171503,
+          "mean_ci95_low": 8.882051721214697,
+          "mean_ci95_high": 10.051851225213344
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 1.7649132201679434,
+          "mean_ci95_low": 1.6682832031128254,
+          "mean_ci95_high": 1.873312571988652
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 1.3262242002592375,
+          "mean_ci95_low": 1.2686908482954462,
+          "mean_ci95_high": 1.3928535254573524
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 3.821745446142675,
+          "mean_ci95_low": 3.5900679439143337,
+          "mean_ci95_high": 4.083369303756698
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 45.091978714036586,
+          "mean_ci95_low": 41.70824289087954,
+          "mean_ci95_high": 48.60753528852853
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 8.8116260094123,
+          "mean_ci95_low": 8.188480911608531,
+          "mean_ci95_high": 9.438504933651766
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 3.1535290981087503,
+          "mean_ci95_low": 2.859344477574199,
+          "mean_ci95_high": 3.469951886385324
+        },
+        {
+          "predictor": "p2",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 0.27015911727412445,
+          "mean_ci95_low": 0.2526566589729585,
+          "mean_ci95_high": 0.28902487794914494
+        }
+      ],
+      "oracle_feasibility_by_target_quartile": [
+        {
+          "target_radius_quartile": 1,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.15854317671679988,
+          "oracle_one_step_success_rate": 1.0,
+          "oracle_position_error_mean_mm": 1.3932771783758626,
+          "oracle_yaw_error_mean_deg": 0.8887931779800675,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.5067401960784313,
+          "boundary_commanded_force_N_rate": 0.7303921568627451,
+          "boundary_ramp_up_s_rate": 0.7705269607843137,
+          "boundary_hold_s_rate": 0.8091299019607843,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 2,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.3275214417636619,
+          "oracle_one_step_success_rate": 0.9883578431372549,
+          "oracle_position_error_mean_mm": 2.856910414145661,
+          "oracle_yaw_error_mean_deg": 1.846759210563788,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.4950980392156863,
+          "boundary_commanded_force_N_rate": 0.5818014705882353,
+          "boundary_ramp_up_s_rate": 0.7622549019607843,
+          "boundary_hold_s_rate": 0.7377450980392157,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 3,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.5842570817183202,
+          "oracle_one_step_success_rate": 0.7334558823529411,
+          "oracle_position_error_mean_mm": 6.002430630733716,
+          "oracle_yaw_error_mean_deg": 2.8413555018163437,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.3710171568627451,
+          "boundary_commanded_force_N_rate": 0.5193014705882353,
+          "boundary_ramp_up_s_rate": 0.7294730392156863,
+          "boundary_hold_s_rate": 0.6280637254901961,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 4,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 2.2725876423295652,
+          "oracle_one_step_success_rate": 0.19148284313725492,
+          "oracle_position_error_mean_mm": 28.197735860843974,
+          "oracle_yaw_error_mean_deg": 8.627008492873669,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.18933823529411764,
+          "boundary_commanded_force_N_rate": 0.6228553921568627,
+          "boundary_ramp_up_s_rate": 0.8290441176470589,
+          "boundary_hold_s_rate": 0.5805759803921569,
+          "boundary_ramp_down_s_rate": 1.0
+        }
+      ],
+      "artifacts": {
+        "decision_cases": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\friction\\decision_cases.csv",
+        "outcome_prediction_metrics": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\friction\\outcome_prediction_metrics.csv",
+        "oracle_feasibility_cases": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\friction\\oracle_feasibility_cases.csv"
+      }
+    },
+    {
+      "protocol_version": "hcr_v2_e1_v2",
+      "friction_cone": "elliptic",
+      "environment_xml": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\assets\\xml\\msc_rod_pusher_box_hcr_v2.xml",
+      "scenario": "com",
+      "role": "test",
+      "conditions": 32,
+      "targets": 408,
+      "actions": 4536,
+      "predictors": [
+        "p0",
+        "p1",
+        "p2"
+      ],
+      "objectives": [
+        "v1",
+        "position_only",
+        "v2"
+      ],
+      "bootstrap_resamples": 10000,
+      "decision_metrics": [
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.6545810517921629,
+          "median": 0.30643924756904134,
+          "p90": 1.7403824274603907,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.6047197175055435,
+          "median": 0.27147715228578156,
+          "p90": 1.6512389163603873,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.03426674429645094,
+          "median": 0.019224624539910667,
+          "p90": 0.0794982218315535,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 6.203143074957119,
+          "median": 2.8621813801837344,
+          "p90": 16.895348883787594,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.20634191176470587,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.6233062735743686,
+          "median": 0.2868614667142886,
+          "p90": 1.6967477566374494,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.02485574575850095,
+          "median": 0.015013375620866926,
+          "p90": 0.06032080802230483,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.01937211960124428,
+          "median": 0.012638235800663821,
+          "p90": 0.0440816572919967,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.02485574575850095,
+          "median": 0.015013375620866926,
+          "p90": 0.06032080802230483,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 17.73046640130357,
+          "median": 10.919928860097965,
+          "p90": 43.39792574089923,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.14414828431372548,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.023187473226075773,
+          "median": 0.013930243217710234,
+          "p90": 0.05632047435189941,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 1.9770259366910865,
+          "median": 1.1665161963281068,
+          "p90": 4.910005849360681,
+          "mean_ci95_low": 1.7681808508600412,
+          "mean_ci95_high": 2.1913223306352614
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 1.1842957648064258,
+          "median": 0.6914800637004328,
+          "p90": 2.9404408801553736,
+          "mean_ci95_low": 1.058764590338168,
+          "mean_ci95_high": 1.3100595287688548
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.023671541638450793,
+          "median": 0.01440726980783189,
+          "p90": 0.06005615038383398,
+          "mean_ci95_low": 0.021271872508126233,
+          "mean_ci95_high": 0.02615507437481107
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 7.934488547685471,
+          "median": 3.5004399331198,
+          "p90": 21.140934707712283,
+          "mean_ci95_low": 6.886282406235571,
+          "mean_ci95_high": 9.00667561511962
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.06150428921568627,
+          "median": 0.0,
+          "p90": 0.0,
+          "mean_ci95_low": 0.04610906862745098,
+          "mean_ci95_high": 0.07912262561274507
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.2771139705882353,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.2377431832107843,
+          "mean_ci95_high": 0.31793811274509803
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 1.507746235633188,
+          "median": 0.8595182794702599,
+          "p90": 3.8136356426699463,
+          "mean_ci95_low": 1.33925234322039,
+          "mean_ci95_high": 1.6843353750441263
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.06757615048019265,
+          "median": 0.03315211914679582,
+          "p90": 0.1701532582511423,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.017714816193573436,
+          "median": 0.001304156669280498,
+          "p90": 0.038280255784786596,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.04139475613539847,
+          "median": 0.02072226967773606,
+          "p90": 0.10789462757153839,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 0.26181394344794173,
+          "median": 0.0727441626929605,
+          "p90": 0.5056588345345987,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.25084252450980393,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.019095190038047983,
+          "median": 0.0036021491169809915,
+          "p90": 0.03870534082046293,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.006372063801488287,
+          "median": 0.002401004996083707,
+          "p90": 0.013891070232254232,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.0008884376442316179,
+          "median": 4.131994440288646e-05,
+          "p90": 0.002247266843758107,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.006372063801488287,
+          "median": 0.002401004996083707,
+          "p90": 0.013891070232254232,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 12.966885450691999,
+          "median": 8.096904527539092,
+          "p90": 30.572380932556882,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.33218443627450983,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.001115203353803489,
+          "median": 0.0002894740928920755,
+          "p90": 0.0031224797275171538,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.8389856008988567,
+          "median": 0.4202719346374926,
+          "p90": 2.1132699097640972,
+          "mean_ci95_low": 0.7343092241544786,
+          "mean_ci95_high": 0.9531911516939913
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.04625542901419582,
+          "median": 0.0,
+          "p90": 0.1065407373527425,
+          "mean_ci95_low": 0.03815929676072802,
+          "mean_ci95_high": 0.055384413449159446
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.009505149751355978,
+          "median": 0.004464510572441615,
+          "p90": 0.020147809932224044,
+          "mean_ci95_low": 0.008163755243394709,
+          "mean_ci95_high": 0.010997619881878983
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 3.6372811333105775,
+          "median": 1.4608972087429797,
+          "p90": 9.826077479615009,
+          "mean_ci95_low": 3.157363106769262,
+          "mean_ci95_high": 4.134712251158606
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.8962162990196079,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.8808210784313726,
+          "mean_ci95_high": 0.9109987745098039
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.6838235294117647,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.6456801470588235,
+          "mean_ci95_high": 0.7217409620098039
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.07569156472976972,
+          "median": 0.015424341245659029,
+          "p90": 0.22469466719749098,
+          "mean_ci95_low": 0.06252930203481674,
+          "mean_ci95_high": 0.08966305426350198
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.14061752001149636,
+          "median": 0.10362564191279283,
+          "p90": 0.2994457652928373,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.09075618572487715,
+          "median": 0.06341816724919005,
+          "p90": 0.19551954568154173,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.035727226633301225,
+          "median": 0.017784509555238227,
+          "p90": 0.09283837367430758,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 1.048902933781951,
+          "median": 0.7615731360890033,
+          "p90": 2.151512363318367,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.29702818627450983,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.09744263758695106,
+          "median": 0.07093258277769872,
+          "p90": 0.2069522466887761,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.007786778297280976,
+          "median": 0.003967932993672691,
+          "p90": 0.015469102624090774,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.002303152140024306,
+          "median": 0.0013662969005180956,
+          "p90": 0.0055413779704678165,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.007786778297280976,
+          "median": 0.003967932993672691,
+          "p90": 0.015469102624090774,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 13.90261393367704,
+          "median": 9.040688114220405,
+          "p90": 31.611382478910052,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.29480698529411764,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.002546100143348543,
+          "median": 0.0018842632494594552,
+          "p90": 0.006568117555162735,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.8991470463976006,
+          "median": 0.48334837708073847,
+          "p90": 2.193593643490214,
+          "mean_ci95_low": 0.7929480421853834,
+          "mean_ci95_high": 1.0139318515009337
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.10641687451293991,
+          "median": 0.040895260762405794,
+          "p90": 0.25918570125884166,
+          "mean_ci95_low": 0.09697722181874496,
+          "mean_ci95_high": 0.11697852018919475
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.010367717377591294,
+          "median": 0.0051289430834361716,
+          "p90": 0.022034446329301273,
+          "mean_ci95_low": 0.008991202682024685,
+          "mean_ci95_high": 0.011893455641245299
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 3.807611775180361,
+          "median": 1.7956347481249613,
+          "p90": 9.966638930752463,
+          "mean_ci95_low": 3.34623318208358,
+          "mean_ci95_high": 4.285124869077149
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.6767003676470589,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.6585458792892157,
+          "mean_ci95_high": 0.6948529411764706
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.6592371323529411,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.6207107843137255,
+          "mean_ci95_high": 0.6976888020833333
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.1438173426509803,
+          "median": 0.09910841345069007,
+          "p90": 0.39290245666214607,
+          "mean_ci95_low": 0.1295909295736544,
+          "mean_ci95_high": 0.158518917276156
+        }
+      ],
+      "outcome_prediction_metrics": [
+        {
+          "predictor": "p0",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 25.14839989113673,
+          "mean_ci95_low": 24.740763294976773,
+          "mean_ci95_high": 25.582626091552637
+        },
+        {
+          "predictor": "p0",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 15.511755185416064,
+          "mean_ci95_low": 15.32048174693595,
+          "mean_ci95_high": 15.711792071934076
+        },
+        {
+          "predictor": "p0",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 59.22607101540054,
+          "mean_ci95_low": 58.1205124015857,
+          "mean_ci95_high": 60.41229138956223
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 9.31352598864648,
+          "mean_ci95_low": 8.625641513169992,
+          "mean_ci95_high": 9.98744895251263
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 5.750005627550301,
+          "mean_ci95_low": 5.421459791617407,
+          "mean_ci95_high": 6.059252431124161
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 21.121247728800114,
+          "mean_ci95_low": 19.421620516614194,
+          "mean_ci95_high": 22.80604521689698
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 43.87388907403716,
+          "mean_ci95_low": 43.69388446505382,
+          "mean_ci95_high": 44.0526658324532
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 49.84326665014473,
+          "mean_ci95_low": 47.29823467966693,
+          "mean_ci95_high": 52.40523789215442
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 20.748266960901653,
+          "mean_ci95_low": 19.16149719247704,
+          "mean_ci95_high": 22.33766254386479
+        },
+        {
+          "predictor": "p0",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 1.0649022233301304,
+          "mean_ci95_low": 1.04670256333588,
+          "mean_ci95_high": 1.0836082442567951
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 1.7871445194226232,
+          "mean_ci95_low": 1.749557288405143,
+          "mean_ci95_high": 1.8243209192153722
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 0.8605022119416155,
+          "mean_ci95_low": 0.8455589766686047,
+          "mean_ci95_high": 0.8744342133961472
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 4.05945943394809,
+          "mean_ci95_low": 3.9678290221061574,
+          "mean_ci95_high": 4.154537011855561
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 0.9580721517491199,
+          "mean_ci95_low": 0.9420406021289836,
+          "mean_ci95_high": 0.9736544716179238
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 0.431375394533397,
+          "mean_ci95_low": 0.4228175773188901,
+          "mean_ci95_high": 0.43929503895789596
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 2.486124688123987,
+          "mean_ci95_low": 2.450388887923977,
+          "mean_ci95_high": 2.5216354610216585
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 43.87388907403716,
+          "mean_ci95_low": 43.69388446505382,
+          "mean_ci95_high": 44.0526658324532
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 4.570440170070604,
+          "mean_ci95_low": 4.4006530378318,
+          "mean_ci95_high": 4.7391663101128465
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 2.8283404145004374,
+          "mean_ci95_low": 2.7373864415695945,
+          "mean_ci95_high": 2.920722413421039
+        },
+        {
+          "predictor": "p1",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 0.14521376467855107,
+          "mean_ci95_low": 0.14331094099412103,
+          "mean_ci95_high": 0.14713560769945858
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 3.995147868389683,
+          "mean_ci95_low": 3.950534213184863,
+          "mean_ci95_high": 4.044728397283269
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 2.890791185929843,
+          "mean_ci95_low": 2.85086738590479,
+          "mean_ci95_high": 2.934648631475488
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 7.8111338337282525,
+          "mean_ci95_low": 7.702657306349439,
+          "mean_ci95_high": 7.929567505670322
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 1.5238196274344074,
+          "mean_ci95_low": 1.5007670488469531,
+          "mean_ci95_high": 1.5496073988498038
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 0.978605750779139,
+          "mean_ci95_low": 0.9638828137941784,
+          "mean_ci95_high": 0.994063937977492
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 3.505468679072779,
+          "mean_ci95_low": 3.452867458089502,
+          "mean_ci95_high": 3.5647272912972547
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 43.87388907403716,
+          "mean_ci95_low": 43.69388446505382,
+          "mean_ci95_high": 44.0526658324532
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 8.409101180894027,
+          "mean_ci95_low": 8.258090966698042,
+          "mean_ci95_high": 8.562475398324363
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 3.4742330697580313,
+          "mean_ci95_low": 3.373405725897359,
+          "mean_ci95_high": 3.5870729886163377
+        },
+        {
+          "predictor": "p2",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 0.22508180336709357,
+          "mean_ci95_low": 0.22164198787612333,
+          "mean_ci95_high": 0.2287238273266414
+        }
+      ],
+      "oracle_feasibility_by_target_quartile": [
+        {
+          "target_radius_quartile": 1,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.15350601649945722,
+          "oracle_one_step_success_rate": 1.0,
+          "oracle_position_error_mean_mm": 1.7300949865814135,
+          "oracle_yaw_error_mean_deg": 0.6700126717038656,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.5248161764705882,
+          "boundary_commanded_force_N_rate": 0.8504901960784313,
+          "boundary_ramp_up_s_rate": 0.7628676470588235,
+          "boundary_hold_s_rate": 0.5916053921568627,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 2,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.32379132994080817,
+          "oracle_one_step_success_rate": 0.9831495098039216,
+          "oracle_position_error_mean_mm": 3.886321992505734,
+          "oracle_yaw_error_mean_deg": 1.2947523031552144,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.5490196078431373,
+          "boundary_commanded_force_N_rate": 0.6354166666666666,
+          "boundary_ramp_up_s_rate": 0.7395833333333334,
+          "boundary_hold_s_rate": 0.9396446078431373,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 3,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.6056712348490534,
+          "oracle_one_step_success_rate": 0.664828431372549,
+          "oracle_position_error_mean_mm": 6.679786115627597,
+          "oracle_yaw_error_mean_deg": 2.716819290676735,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.4947916666666667,
+          "boundary_commanded_force_N_rate": 0.39797794117647056,
+          "boundary_ramp_up_s_rate": 0.7254901960784313,
+          "boundary_hold_s_rate": 0.4494485294117647,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 4,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 2.0879521062493245,
+          "oracle_one_step_success_rate": 0.1488970588235294,
+          "oracle_position_error_mean_mm": 24.317417875347065,
+          "oracle_yaw_error_mean_deg": 8.720812124819714,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.4990808823529412,
+          "boundary_commanded_force_N_rate": 0.7006740196078431,
+          "boundary_ramp_up_s_rate": 0.7527573529411765,
+          "boundary_hold_s_rate": 0.6014093137254902,
+          "boundary_ramp_down_s_rate": 1.0
+        }
+      ],
+      "artifacts": {
+        "decision_cases": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\com\\decision_cases.csv",
+        "outcome_prediction_metrics": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\com\\outcome_prediction_metrics.csv",
+        "oracle_feasibility_cases": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\com\\oracle_feasibility_cases.csv"
+      }
+    },
+    {
+      "protocol_version": "hcr_v2_e1_v2",
+      "friction_cone": "elliptic",
+      "environment_xml": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\assets\\xml\\msc_rod_pusher_box_hcr_v2.xml",
+      "scenario": "joint",
+      "role": "test",
+      "conditions": 32,
+      "targets": 408,
+      "actions": 4536,
+      "predictors": [
+        "p0",
+        "p1",
+        "p2"
+      ],
+      "objectives": [
+        "v1",
+        "position_only",
+        "v2"
+      ],
+      "bootstrap_resamples": 10000,
+      "decision_metrics": [
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.6718590833671304,
+          "median": 0.2694888209765258,
+          "p90": 1.8141519868779454,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.6225629349478512,
+          "median": 0.2351295934484613,
+          "p90": 1.7262819401364369,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.039297781366228385,
+          "median": 0.024043741229355774,
+          "p90": 0.09067616363113809,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 6.322272288759816,
+          "median": 2.4352234804018873,
+          "p90": 17.47320593945912,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.1639093137254902,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.6405843051493361,
+          "median": 0.24619168513132655,
+          "p90": 1.7591465772297248,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.03209763532051531,
+          "median": 0.018918730308431362,
+          "p90": 0.07784440699088681,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.02596367244804174,
+          "median": 0.01629039178552682,
+          "p90": 0.059388986146310205,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.03209763532051531,
+          "median": 0.018918730308431362,
+          "p90": 0.07784440699088681,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 18.765681908629805,
+          "median": 11.468072458445821,
+          "p90": 46.19013097926254,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.11879595588235294,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.030429362788090133,
+          "median": 0.01770305708166689,
+          "p90": 0.07462580809423473,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 2.391581351794069,
+          "median": 1.4330663389082579,
+          "p90": 5.8200796306130345,
+          "mean_ci95_low": 2.1078560939058972,
+          "mean_ci95_high": 2.6854905351061973
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 1.5838512062350825,
+          "median": 0.9431229962066134,
+          "p90": 3.8489309321567866,
+          "mean_ci95_low": 1.368027446866728,
+          "mean_ci95_high": 1.8201145326855792
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.031194220637906726,
+          "median": 0.01967748621769501,
+          "p90": 0.07419234490557633,
+          "mean_ci95_low": 0.027216899326382195,
+          "mean_ci95_high": 0.03526426738156696
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 8.318703198987327,
+          "median": 3.293628421797573,
+          "p90": 21.4402771395982,
+          "mean_ci95_low": 7.067125485872511,
+          "mean_ci95_high": 9.687838524774794
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.0350796568627451,
+          "median": 0.0,
+          "p90": 0.0,
+          "mean_ci95_low": 0.02297794117647059,
+          "mean_ci95_high": 0.048636642156862746
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.22931985294117646,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.18474264705882354,
+          "mean_ci95_high": 0.27657781862745096
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p0",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 1.9223016507361703,
+          "median": 1.1235878646888526,
+          "p90": 4.76236972771782,
+          "mean_ci95_low": 1.6747259676242927,
+          "mean_ci95_high": 2.1872426619016982
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.06432254630237615,
+          "median": 0.03400582027780441,
+          "p90": 0.15492255018896134,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.015026397883096985,
+          "median": 0.0019408169128371285,
+          "p90": 0.032458421822004146,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.040507213752804375,
+          "median": 0.02055576742413337,
+          "p90": 0.10488504734310455,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 0.23815332549571755,
+          "median": 0.08816335476490396,
+          "p90": 0.5199712024556694,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.24517463235294118,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.015349659634329748,
+          "median": 0.002955105494761398,
+          "p90": 0.03530096423938166,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.006993334368036424,
+          "median": 0.0025571053638869384,
+          "p90": 0.014119014116451285,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.0008593714955628526,
+          "median": 8.311295622177911e-05,
+          "p90": 0.002325306862194015,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.006993334368036424,
+          "median": 0.0025571053638869384,
+          "p90": 0.014119014116451285,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 13.391159572999351,
+          "median": 8.161504029822249,
+          "p90": 31.83598129693487,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.3318014705882353,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.0009328505628568851,
+          "median": 0.000358101869989551,
+          "p90": 0.002994708664194327,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.8500771759759763,
+          "median": 0.40593337162499465,
+          "p90": 2.0375896832488527,
+          "mean_ci95_low": 0.7221626230528205,
+          "mean_ci95_high": 0.9888973547509811
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.04234703041698962,
+          "median": 0.0,
+          "p90": 0.10411089086232458,
+          "mean_ci95_low": 0.03569338446694528,
+          "mean_ci95_high": 0.04958112110317506
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.010153717160132239,
+          "median": 0.004667618678627175,
+          "p90": 0.02101229481870527,
+          "mean_ci95_low": 0.008436735608551293,
+          "mean_ci95_high": 0.012087226818578439
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 3.4239131796936437,
+          "median": 1.3305284275595943,
+          "p90": 9.24259362872786,
+          "mean_ci95_low": 2.9033138200317894,
+          "mean_ci95_high": 3.95803822171802
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.8956035539215687,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.8800551470588235,
+          "mean_ci95_high": 0.9106158088235294
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.692172181372549,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.6488970588235294,
+          "mean_ci95_high": 0.7355238970588235
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p1",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.061801164814776176,
+          "median": 0.02024028167620648,
+          "p90": 0.196623055679075,
+          "mean_ci95_low": 0.049012969366541585,
+          "mean_ci95_high": 0.07558615056001261
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.12782378702233188,
+          "median": 0.09472640190377594,
+          "p90": 0.2726923857452137,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.07852763860305273,
+          "median": 0.05794071974187104,
+          "p90": 0.16874086858643475,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.03663329997602597,
+          "median": 0.017553021396961604,
+          "p90": 0.09604232789553357,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 0.9119048704630591,
+          "median": 0.6901307447528451,
+          "p90": 1.8984709300423195,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.2978707107843137,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v1",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.08437166633818809,
+          "median": 0.06290674115956534,
+          "p90": 0.18304211616293792,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.008346570979274971,
+          "median": 0.004053702301956745,
+          "p90": 0.015810518137493235,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.0022126081068014,
+          "median": 0.0013968953392505799,
+          "p90": 0.005308402003793242,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.008346570979274971,
+          "median": 0.004053702301956745,
+          "p90": 0.015810518137493235,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 14.251813990945667,
+          "median": 9.36093604760844,
+          "p90": 32.64373142101162,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.2955729166666667,
+          "median": 0.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "position_only",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.0023165797282708755,
+          "median": 0.0018639617416832022,
+          "p90": 0.006060147304676661,
+          "mean_ci95_low": null,
+          "mean_ci95_high": null
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_mujoco_cost",
+          "n": 13056,
+          "mean": 0.9045194781336775,
+          "median": 0.4701438487139609,
+          "p90": 2.1119067808492016,
+          "mean_ci95_low": 0.7746814873765282,
+          "mean_ci95_high": 1.0454063771480184
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selection_gap",
+          "n": 13056,
+          "mean": 0.09678933257469081,
+          "median": 0.03531261890396309,
+          "p90": 0.2510526012910004,
+          "mean_ci95_low": 0.08795769385343485,
+          "mean_ci95_high": 0.10695462035072444
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_position_error_m",
+          "n": 13056,
+          "mean": 0.01099198787475265,
+          "median": 0.005364855380254392,
+          "p90": 0.02242445653636183,
+          "mean_ci95_low": 0.009232666220353238,
+          "mean_ci95_high": 0.012976862660568763
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_yaw_error_deg",
+          "n": 13056,
+          "mean": 3.5492008439604485,
+          "median": 1.59003410127653,
+          "p90": 9.144568034420306,
+          "mean_ci95_low": 3.055667422736668,
+          "mean_ci95_high": 4.071044514389017
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "near_optimal",
+          "n": 13056,
+          "mean": 0.690640318627451,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.6698069852941176,
+          "mean_ci95_high": 0.7104779411764706
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "one_step_success",
+          "n": 13056,
+          "mean": 0.6685814950980392,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 0.624691712622549,
+          "mean_ci95_high": 0.7120863970588235
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_rollout_valid",
+          "n": 13056,
+          "mean": 1.0,
+          "median": 1.0,
+          "p90": 1.0,
+          "mean_ci95_low": 1.0,
+          "mean_ci95_high": 1.0
+        },
+        {
+          "predictor": "p2",
+          "objective": "v2",
+          "metric": "selected_action_optimism",
+          "n": 13056,
+          "mean": 0.11622263433555656,
+          "median": 0.08594189703416524,
+          "p90": 0.34670279262413817,
+          "mean_ci95_low": 0.0987206156062319,
+          "mean_ci95_high": 0.13448856994616326
+        }
+      ],
+      "outcome_prediction_metrics": [
+        {
+          "predictor": "p0",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 32.212225350622454,
+          "mean_ci95_low": 29.755103595808244,
+          "mean_ci95_high": 34.916789225240315
+        },
+        {
+          "predictor": "p0",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 20.0210452507149,
+          "mean_ci95_low": 18.4386414597749,
+          "mean_ci95_high": 21.6903835499817
+        },
+        {
+          "predictor": "p0",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 76.63307832569825,
+          "mean_ci95_low": 70.55020010184174,
+          "mean_ci95_high": 83.26642909668541
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 10.443324730097116,
+          "mean_ci95_low": 9.621630208000898,
+          "mean_ci95_high": 11.282032702560807
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 6.34638656896375,
+          "mean_ci95_low": 5.7963289725180935,
+          "mean_ci95_high": 6.877162774586062
+        },
+        {
+          "predictor": "p0",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 24.0628251280427,
+          "mean_ci95_low": 22.044220469003665,
+          "mean_ci95_high": 26.209351578790027
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 46.2891912938685,
+          "mean_ci95_low": 42.69138354834277,
+          "mean_ci95_high": 50.049033802201365
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 60.93701205022708,
+          "mean_ci95_low": 56.76651252491746,
+          "mean_ci95_high": 65.18678611199311
+        },
+        {
+          "predictor": "p0",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 26.51852399325882,
+          "mean_ci95_low": 23.5962898890043,
+          "mean_ci95_high": 29.894147905914327
+        },
+        {
+          "predictor": "p0",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 1.5394104577762442,
+          "mean_ci95_low": 1.3730268646339554,
+          "mean_ci95_high": 1.7224003741730451
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 2.193221988094043,
+          "mean_ci95_low": 1.883869339849482,
+          "mean_ci95_high": 2.5372741804436654
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 1.1442931871128765,
+          "mean_ci95_low": 0.9766785610854504,
+          "mean_ci95_high": 1.333021110401045
+        },
+        {
+          "predictor": "p1",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 4.91840825338829,
+          "mean_ci95_low": 4.252439842836389,
+          "mean_ci95_high": 5.661221034721863
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 1.019401133869636,
+          "mean_ci95_low": 0.9517811651626493,
+          "mean_ci95_high": 1.0961464272843635
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 0.4626059835775963,
+          "mean_ci95_low": 0.42466692364182373,
+          "mean_ci95_high": 0.5035898353529397
+        },
+        {
+          "predictor": "p1",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 2.6425140854716878,
+          "mean_ci95_low": 2.4904528445983756,
+          "mean_ci95_high": 2.816259559625689
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 46.2891912938685,
+          "mean_ci95_low": 42.69138354834277,
+          "mean_ci95_high": 50.049033802201365
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 5.486784923123954,
+          "mean_ci95_low": 4.683291609833023,
+          "mean_ci95_high": 6.370768733758169
+        },
+        {
+          "predictor": "p1",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 2.9947964392251105,
+          "mean_ci95_low": 2.784773042830656,
+          "mean_ci95_high": 3.2356053755057723
+        },
+        {
+          "predictor": "p1",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 0.1620047432249279,
+          "mean_ci95_low": 0.14396016165960646,
+          "mean_ci95_high": 0.18177989806353784
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_mean_mm",
+          "condition_mean": 4.321710950190231,
+          "mean_ci95_low": 4.000065248917698,
+          "mean_ci95_high": 4.677159398558471
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_median_mm",
+          "condition_mean": 3.15078933880395,
+          "mean_ci95_low": 2.9593926850802377,
+          "mean_ci95_high": 3.3619177707806074
+        },
+        {
+          "predictor": "p2",
+          "metric": "planar_error_p90_mm",
+          "condition_mean": 8.472238953973026,
+          "mean_ci95_low": 7.797110147752863,
+          "mean_ci95_high": 9.208000858053136
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_mean_deg",
+          "condition_mean": 1.5389137770856947,
+          "mean_ci95_low": 1.4499374236459506,
+          "mean_ci95_high": 1.6367065835423347
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_median_deg",
+          "condition_mean": 0.991084850737006,
+          "mean_ci95_low": 0.9341978387116112,
+          "mean_ci95_high": 1.0529316429708966
+        },
+        {
+          "predictor": "p2",
+          "metric": "yaw_error_p90_deg",
+          "condition_mean": 3.5248568638891844,
+          "mean_ci95_low": 3.3371757721555713,
+          "mean_ci95_high": 3.729355137173691
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_threshold_deg",
+          "condition_mean": 46.2891912938685,
+          "mean_ci95_low": 42.69138354834277,
+          "mean_ci95_high": 50.049033802201365
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_planar_error_mean_mm",
+          "condition_mean": 9.022121752705855,
+          "mean_ci95_low": 8.336645069115953,
+          "mean_ci95_high": 9.773838350506564
+        },
+        {
+          "predictor": "p2",
+          "metric": "high_yaw_yaw_error_mean_deg",
+          "condition_mean": 3.6509065863014296,
+          "mean_ci95_low": 3.3904356557138655,
+          "mean_ci95_high": 3.939566243670234
+        },
+        {
+          "predictor": "p2",
+          "metric": "v2_cost_prediction_mae",
+          "condition_mean": 0.23679082195166623,
+          "mean_ci95_low": 0.21989712035563924,
+          "mean_ci95_high": 0.25495405743077804
+        }
+      ],
+      "oracle_feasibility_by_target_quartile": [
+        {
+          "target_radius_quartile": 1,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.1708971431615105,
+          "oracle_one_step_success_rate": 1.0,
+          "oracle_position_error_mean_mm": 2.0686301127552533,
+          "oracle_yaw_error_mean_deg": 0.6746563752374781,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.5214460784313726,
+          "boundary_commanded_force_N_rate": 0.7512254901960784,
+          "boundary_ramp_up_s_rate": 0.7711397058823529,
+          "boundary_hold_s_rate": 0.7919730392156863,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 2,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.3256402362194507,
+          "oracle_one_step_success_rate": 0.9712009803921569,
+          "oracle_position_error_mean_mm": 4.043325618362307,
+          "oracle_yaw_error_mean_deg": 1.2347395530133538,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.5689338235294118,
+          "boundary_commanded_force_N_rate": 0.5919117647058824,
+          "boundary_ramp_up_s_rate": 0.7558210784313726,
+          "boundary_hold_s_rate": 0.6850490196078431,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 3,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 0.5795859072009891,
+          "oracle_one_step_success_rate": 0.7089460784313726,
+          "oracle_position_error_mean_mm": 6.508628671571447,
+          "oracle_yaw_error_mean_deg": 2.541544736224167,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.4856004901960784,
+          "boundary_commanded_force_N_rate": 0.5199142156862745,
+          "boundary_ramp_up_s_rate": 0.725796568627451,
+          "boundary_hold_s_rate": 0.5882352941176471,
+          "boundary_ramp_down_s_rate": 1.0
+        },
+        {
+          "target_radius_quartile": 4,
+          "n_cases": 3264,
+          "oracle_v2_cost_mean": 2.1547972956539962,
+          "oracle_one_step_success_rate": 0.15318627450980393,
+          "oracle_position_error_mean_mm": 26.799911915428407,
+          "oracle_yaw_error_mean_deg": 8.148016998825756,
+          "boundary_force_angle_relative_to_normal_deg_rate": 0.4849877450980392,
+          "boundary_commanded_force_N_rate": 0.6709558823529411,
+          "boundary_ramp_up_s_rate": 0.7876838235294118,
+          "boundary_hold_s_rate": 0.5765931372549019,
+          "boundary_ramp_down_s_rate": 1.0
+        }
+      ],
+      "artifacts": {
+        "decision_cases": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\joint\\decision_cases.csv",
+        "outcome_prediction_metrics": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\joint\\outcome_prediction_metrics.csv",
+        "oracle_feasibility_cases": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\hcr_v2\\e1\\evaluation\\test\\joint\\oracle_feasibility_cases.csv"
+      }
+    }
+  ],
+  "equal_weight_macro_average": [
+    {
+      "predictor": "p0",
+      "objective": "position_only",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.1261488970588235,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "position_only",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 0.027273727102759843,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "position_only",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 0.028941999635185022,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "position_only",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.028941999635185022,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "position_only",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "position_only",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 18.293379482205143,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "position_only",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 0.02266884437628638,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v1",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.18438521241830064,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v1",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 0.4703661823317411,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v1",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 0.5016409605495353,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v1",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.03768467870535058,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v1",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v1",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 4.638449241358779,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v1",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 0.4560028257195183,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v2",
+      "metric": "near_optimal",
+      "equal_weight_scenario_mean": 0.0561172385620915,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v2",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.2568933823529411,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v2",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 1.6181048957031046,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v2",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 2.0873845967610034,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v2",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.028614417429437534,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v2",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v2",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 6.566637252891266,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p0",
+      "objective": "v2",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 1.2753220457357586,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "position_only",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.3420138888888889,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "position_only",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 0.0008839446402276593,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "position_only",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 0.007048275787812873,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "position_only",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.007048275787812873,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "position_only",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "position_only",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 12.814534532496625,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "position_only",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 0.0007751205289142299,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v1",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.2507404003267974,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v1",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 0.011517449542808344,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v1",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 0.05658708312508853,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v1",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.0399215074844877,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v1",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v1",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 0.1666557564060078,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v1",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 0.010948948295071518,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v2",
+      "metric": "near_optimal",
+      "equal_weight_scenario_mean": 0.9032373366013071,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v2",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.6972783905228758,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v2",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 0.0557270324733902,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v2",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 0.8503891483108751,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v2",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.009915277244293244,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v2",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v2",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 3.5462528609621304,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p1",
+      "objective": "v2",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 0.03832659728563037,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "position_only",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.28663705065359474,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "position_only",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 0.0027780530737786043,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "position_only",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 0.008761527828745536,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "position_only",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.008761527828745536,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "position_only",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "position_only",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 14.143083036097181,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "position_only",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 0.002488372569846893,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v1",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.29983660130718953,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v1",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 0.09467070211904449,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v1",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 0.1376786538387463,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v1",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.035953972073411895,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v1",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v1",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 1.0172468176533438,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v1",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 0.09204051900872927,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v2",
+      "metric": "near_optimal",
+      "equal_weight_scenario_mean": 0.6334507761437909,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v2",
+      "metric": "one_step_success",
+      "equal_weight_scenario_mean": 0.6628880718954249,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v2",
+      "metric": "selected_action_optimism",
+      "equal_weight_scenario_mean": 0.14747865613618347,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v2",
+      "metric": "selected_mujoco_cost",
+      "equal_weight_scenario_mean": 0.9249141796134559,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v2",
+      "metric": "selected_position_error_m",
+      "equal_weight_scenario_mean": 0.010999451046030909,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v2",
+      "metric": "selected_rollout_valid",
+      "equal_weight_scenario_mean": 1.0,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v2",
+      "metric": "selected_yaw_error_deg",
+      "equal_weight_scenario_mean": 3.7494162731191047,
+      "scenario_count": 3
+    },
+    {
+      "predictor": "p2",
+      "objective": "v2",
+      "metric": "selection_gap",
+      "equal_weight_scenario_mean": 0.11285162858821124,
+      "scenario_count": 3
+    }
+  ]
+}

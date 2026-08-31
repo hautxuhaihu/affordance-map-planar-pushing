@@ -1,0 +1,330 @@
+{
+  "protocol_version": "continuous_action_refinement_e1_v1",
+  "car_full_name": "Continuous Action Refinement",
+  "friction_cone": "elliptic",
+  "nominal_condition_id": "J_TRAIN_062",
+  "default_seed": 0,
+  "bootstrap_resamples": 10000,
+  "validation_targets": 128,
+  "primary_configuration": {
+    "anchor_budget": 20,
+    "candidates_per_anchor": 512,
+    "effective_improvement_threshold": 0.05,
+    "sensitivity_improvement_threshold": 0.02
+  },
+  "configuration_summaries": [
+    {
+      "anchor_budget": 20,
+      "candidates_per_anchor": 128,
+      "target_candidate_relationships": 2560,
+      "mean_union_oracle_improvement": 0.5731537300018724,
+      "mean_union_oracle_improvement_95_ci": [
+        0.5058749841470509,
+        0.6408181129586153
+      ],
+      "median_union_oracle_improvement": 0.3103602282653084,
+      "p90_union_oracle_improvement": 1.7273406425538023,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 2.816536457591475,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.9453125,
+      "continuous_only_mean_improvement": 0.5664852677142922,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.0703125,
+      "continuous_only_loss_rate": 0.015625,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.8671875,
+      "paired_success_rate_difference": 0.15625,
+      "paired_success_rate_difference_95_ci": [
+        0.1015625,
+        0.2109375
+      ],
+      "mean_valid_candidate_relationships": 2560.0
+    },
+    {
+      "anchor_budget": 20,
+      "candidates_per_anchor": 256,
+      "target_candidate_relationships": 5120,
+      "mean_union_oracle_improvement": 0.616630646966165,
+      "mean_union_oracle_improvement_95_ci": [
+        0.5422584304707779,
+        0.692350361131689
+      ],
+      "median_union_oracle_improvement": 0.3198193196664008,
+      "p90_union_oracle_improvement": 1.834326483907912,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 3.275341817479656,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.9453125,
+      "continuous_only_mean_improvement": 0.6127803177073972,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.0703125,
+      "continuous_only_loss_rate": 0.015625,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.875,
+      "paired_success_rate_difference": 0.1640625,
+      "paired_success_rate_difference_95_ci": [
+        0.109375,
+        0.21875
+      ],
+      "mean_valid_candidate_relationships": 5120.0
+    },
+    {
+      "anchor_budget": 20,
+      "candidates_per_anchor": 512,
+      "target_candidate_relationships": 10240,
+      "mean_union_oracle_improvement": 0.6556763168107574,
+      "mean_union_oracle_improvement_95_ci": [
+        0.5706845578962562,
+        0.7413186975558115
+      ],
+      "median_union_oracle_improvement": 0.32485801753755533,
+      "p90_union_oracle_improvement": 1.9016088351545348,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 3.851229743361752,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.953125,
+      "continuous_only_mean_improvement": 0.6524920324158037,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.078125,
+      "continuous_only_loss_rate": 0.0078125,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.8984375,
+      "paired_success_rate_difference": 0.1875,
+      "paired_success_rate_difference_95_ci": [
+        0.1328125,
+        0.2421875
+      ],
+      "mean_valid_candidate_relationships": 10240.0
+    },
+    {
+      "anchor_budget": 50,
+      "candidates_per_anchor": 128,
+      "target_candidate_relationships": 6400,
+      "mean_union_oracle_improvement": 0.6427608909450158,
+      "mean_union_oracle_improvement_95_ci": [
+        0.5540507160890616,
+        0.732658006140785
+      ],
+      "median_union_oracle_improvement": 0.3196377856780521,
+      "p90_union_oracle_improvement": 1.9794669186808018,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 3.7009764827889837,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.9453125,
+      "continuous_only_mean_improvement": 0.6362145920603093,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.0703125,
+      "continuous_only_loss_rate": 0.015625,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.8984375,
+      "paired_success_rate_difference": 0.1875,
+      "paired_success_rate_difference_95_ci": [
+        0.1328125,
+        0.2421875
+      ],
+      "mean_valid_candidate_relationships": 6400.0
+    },
+    {
+      "anchor_budget": 50,
+      "candidates_per_anchor": 256,
+      "target_candidate_relationships": 12800,
+      "mean_union_oracle_improvement": 0.678387215085402,
+      "mean_union_oracle_improvement_95_ci": [
+        0.583602727844933,
+        0.7775317651375856
+      ],
+      "median_union_oracle_improvement": 0.32612804490838243,
+      "p90_union_oracle_improvement": 1.9794669186808018,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 3.902326730642401,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.9453125,
+      "continuous_only_mean_improvement": 0.6756382263126863,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.0703125,
+      "continuous_only_loss_rate": 0.015625,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.890625,
+      "paired_success_rate_difference": 0.1796875,
+      "paired_success_rate_difference_95_ci": [
+        0.125,
+        0.234375
+      ],
+      "mean_valid_candidate_relationships": 12800.0
+    },
+    {
+      "anchor_budget": 50,
+      "candidates_per_anchor": 512,
+      "target_candidate_relationships": 25600,
+      "mean_union_oracle_improvement": 0.7066161605819175,
+      "mean_union_oracle_improvement_95_ci": [
+        0.6075707318333087,
+        0.8099964885277887
+      ],
+      "median_union_oracle_improvement": 0.33441591861275377,
+      "p90_union_oracle_improvement": 1.9794669186808018,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 4.474964435988772,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.953125,
+      "continuous_only_mean_improvement": 0.7045332166730158,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.078125,
+      "continuous_only_loss_rate": 0.0078125,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.9140625,
+      "paired_success_rate_difference": 0.203125,
+      "paired_success_rate_difference_95_ci": [
+        0.1484375,
+        0.2578125
+      ],
+      "mean_valid_candidate_relationships": 25600.0
+    },
+    {
+      "anchor_budget": 100,
+      "candidates_per_anchor": 128,
+      "target_candidate_relationships": 12800,
+      "mean_union_oracle_improvement": 0.6555829233964607,
+      "mean_union_oracle_improvement_95_ci": [
+        0.5674707573341297,
+        0.7461768846539386
+      ],
+      "median_union_oracle_improvement": 0.3198193196664008,
+      "p90_union_oracle_improvement": 1.9794669186808018,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 3.7009764827889837,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.953125,
+      "continuous_only_mean_improvement": 0.6490366245117543,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.0703125,
+      "continuous_only_loss_rate": 0.015625,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.8984375,
+      "paired_success_rate_difference": 0.1875,
+      "paired_success_rate_difference_95_ci": [
+        0.1328125,
+        0.2421875
+      ],
+      "mean_valid_candidate_relationships": 12800.0
+    },
+    {
+      "anchor_budget": 100,
+      "candidates_per_anchor": 256,
+      "target_candidate_relationships": 25600,
+      "mean_union_oracle_improvement": 0.6927453655252527,
+      "mean_union_oracle_improvement_95_ci": [
+        0.5984862067086002,
+        0.7905035456841878
+      ],
+      "median_union_oracle_improvement": 0.3318629479306533,
+      "p90_union_oracle_improvement": 2.0600425858669245,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 3.902326730642401,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.953125,
+      "continuous_only_mean_improvement": 0.6899963767525371,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.0703125,
+      "continuous_only_loss_rate": 0.015625,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.90625,
+      "paired_success_rate_difference": 0.1953125,
+      "paired_success_rate_difference_95_ci": [
+        0.140625,
+        0.25
+      ],
+      "mean_valid_candidate_relationships": 25600.0
+    },
+    {
+      "anchor_budget": 100,
+      "candidates_per_anchor": 512,
+      "target_candidate_relationships": 51200,
+      "mean_union_oracle_improvement": 0.7191638979456622,
+      "mean_union_oracle_improvement_95_ci": [
+        0.6194920295957901,
+        0.8226997518203467
+      ],
+      "median_union_oracle_improvement": 0.3352966598140591,
+      "p90_union_oracle_improvement": 2.1003105294978193,
+      "minimum_union_oracle_improvement": 0.0,
+      "maximum_union_oracle_improvement": 4.474964435988772,
+      "effective_improvement_0p05_rate": 0.9140625,
+      "effective_improvement_0p05_rate_95_ci": [
+        0.8671875,
+        0.953125
+      ],
+      "effective_improvement_0p02_rate": 0.9609375,
+      "continuous_only_mean_improvement": 0.7171159011743963,
+      "continuous_only_win_rate": 0.9140625,
+      "continuous_only_tie_rate": 0.078125,
+      "continuous_only_loss_rate": 0.0078125,
+      "discrete_one_step_success_rate": 0.7109375,
+      "union_one_step_success_rate": 0.9296875,
+      "paired_success_rate_difference": 0.21875,
+      "paired_success_rate_difference_95_ci": [
+        0.1640625,
+        0.2734375
+      ],
+      "mean_valid_candidate_relationships": 51200.0
+    }
+  ],
+  "primary_rollout_validity": {
+    "unique_rollouts": 530944,
+    "valid_rollouts": 530944,
+    "validity_rate": 1.0,
+    "contact_failure_rate": 0.0,
+    "not_stopped_rate": 0.0,
+    "simulation_unstable_rate": 0.0,
+    "quality_failure_rate": 0.0
+  },
+  "all_sensitivity_rollout_validity": {
+    "unique_rollouts": 1115136,
+    "valid_rollouts": 1115136,
+    "validity_rate": 1.0,
+    "contact_failure_rate": 0.0,
+    "not_stopped_rate": 0.0,
+    "simulation_unstable_rate": 0.0,
+    "quality_failure_rate": 0.0
+  },
+  "go_criteria": {
+    "mean_improvement_ci_lower_above_zero": 1,
+    "effective_improvement_rate_at_least_0p10": 1,
+    "primary_rollout_validity_at_least_0p99": 1
+  },
+  "go_decision": 1,
+  "case_metrics_path": "E:\\PythonProjects\\MujocoProjects\\msc_proj_v2\\results\\car\\experiment_1\\continuous_action_refinement_case_metrics.csv"
+}
