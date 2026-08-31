@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Physics-based Affordance Map for Planar Pushing Motion"
+type: software
+authors:
+  - family-names: Xu
+    given-names: Haihu
+repository-code: "https://github.com/hautxuhaihu/affordance-map-planar-pushing"
+url: "https://github.com/hautxuhaihu/affordance-map-planar-pushing"
+license: MIT
+version: 1.0.0
+date-released: 2026-08-31
+keywords:
+  - robotics
+  - MuJoCo
+  - planar pushing
+  - affordance map
+  - Bayesian inference
+  - continuous action refinement

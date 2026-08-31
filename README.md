@@ -121,7 +121,15 @@ Both directories are ignored by Git. The included manifests define the action li
 
 ## Citation
 
-Citation details will be added after the final dissertation submission.
+If you use this code, please cite the software release:
+
+```text
+Xu, H. (2026). Physics-based Affordance Map for Planar Pushing Motion
+(Version 1.0.0) [Computer software].
+https://github.com/hautxuhaihu/affordance-map-planar-pushing
+```
+
+Machine-readable citation metadata are provided in `CITATION.cff`.
 
 ## License
 
