@@ -1,0 +1,13 @@
+{
+  "schema_version": "action_sampling_box_v0",
+  "object_type": "box",
+  "contact_regions": {
+    "num_edges": 4,
+    "points_per_edge": 3
+  },
+  "force_angles_deg": [-30, -15, 0, 15, 30],
+  "commanded_force_N": [],
+  "ramp_up_s": [],
+  "hold_s": [],
+  "notes": "Historical placeholder config. Current executable scripts define the active physical-pusher + midrow sampling grid in code."
+}

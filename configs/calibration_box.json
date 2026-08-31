@@ -1,0 +1,9 @@
+{
+  "schema_version": "calibration_box_v0",
+  "object_type": "box",
+  "force_angles_deg": [-30, 0, 30],
+  "candidate_force_N": [],
+  "candidate_hold_s": [],
+  "candidate_ramp_up_s": [],
+  "notes": "Historical placeholder config. Current calibration/action ranges are encoded in the executable experiment scripts."
+}

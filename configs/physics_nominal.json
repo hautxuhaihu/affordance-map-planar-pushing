@@ -1,0 +1,12 @@
+{
+  "schema_version": "physics_nominal_v0",
+  "mujoco": {
+    "timestep": 0.0005,
+    "gravity_z": -9.81
+  },
+  "contact": {
+    "solref": [0.002, 1.0],
+    "solimp": [0.9, 0.95, 0.001, 0.5, 2.0]
+  },
+  "notes": "Historical placeholder config. Current physical-pusher XML is the source of truth for MuJoCo physics parameters."
+}

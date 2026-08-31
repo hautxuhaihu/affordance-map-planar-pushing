@@ -1,0 +1,160 @@
+<mujoco model="msc_rod_pusher_box">
+
+    <!-- 编译器与仿真选项 -->
+    <compiler angle="degree" coordinate="local"/>
+    <option timestep="0.001" integrator="Euler" iterations="50" gravity="0 0 -9.81">
+        <flag contact="enable"/>
+    </option>
+
+    <!-- 默认物理参数 -->
+    <default>
+        <geom friction="0.2 0.005 0.0001"
+              solref="0.01 1"
+              solimp="0.9 0.95 0.001"/>
+        <joint damping="0.0"/>
+    </default>
+
+    <!-- 可视化材质 -->
+    <asset>
+        <texture name="grid" type="2d" builtin="checker"
+                 rgb1="0.82 0.82 0.82"
+                 rgb2="0.92 0.92 0.92"
+                 width="512" height="512"/>
+        <material name="table_mat" texture="grid" texrepeat="8 8" reflectance="0.0"/>
+        <material name="object_mat" rgba="0.20 0.42 0.80 1"/>
+        <material name="edge_mat" rgba="1.00 0.55 0.00 1"/>
+        <material name="yaw_arrow_mat" rgba="1.00 0.15 0.05 1"/>
+        <material name="pusher_mat" rgba="0.10 0.40 0.95 1"/>
+        <material name="pusher_tip_mat" rgba="1.00 0.95 0.10 1"/>
+    </asset>
+
+    <worldbody>
+        <!-- 物体正上方灯光 -->
+        <light name="object_top_light" pos="0 0 0.8" dir="0 0 -1"
+               diffuse="0.55 0.55 0.55"
+               specular="0.02 0.02 0.02"/>
+
+        <!-- 桌面 -->
+        <geom name="table"
+              type="box"
+              pos="0 0 -0.025"
+              size="0.75 0.75 0.025"
+              material="table_mat"
+              condim="4"
+              contype="1"
+              conaffinity="2"/>
+
+        <!-- 被推动的平面物体 -->
+        <body name="object" pos="0 0 0.045">
+            <joint name="object_x" type="slide" axis="1 0 0"/>
+            <joint name="object_y" type="slide" axis="0 1 0"/>
+            <joint name="object_z" type="slide" axis="0 0 1"/>
+            <joint name="object_yaw" type="hinge" axis="0 0 1"/>
+
+            <inertial pos="0.005 0 0" mass="0.1" diaginertia="0.000135 0.000135 0.000135"/>
+            <geom name="object_geom"
+                  type="box"
+                  size="0.045 0.045 0.045"
+                  material="object_mat"
+                  contype="2"
+                  conaffinity="1"/>
+
+            <!-- 12 条橙色边框，只用于增强正方体棱角可视性 -->
+            <geom name="edge_x_pp" type="box" pos="0 0.046 0.046"
+                  size="0.046 0.0015 0.0015" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_x_pn" type="box" pos="0 0.046 -0.046"
+                  size="0.046 0.0015 0.0015" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_x_np" type="box" pos="0 -0.046 0.046"
+                  size="0.046 0.0015 0.0015" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_x_nn" type="box" pos="0 -0.046 -0.046"
+                  size="0.046 0.0015 0.0015" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+
+            <geom name="edge_y_pp" type="box" pos="0.046 0 0.046"
+                  size="0.0015 0.046 0.0015" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_y_pn" type="box" pos="0.046 0 -0.046"
+                  size="0.0015 0.046 0.0015" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_y_np" type="box" pos="-0.046 0 0.046"
+                  size="0.0015 0.046 0.0015" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_y_nn" type="box" pos="-0.046 0 -0.046"
+                  size="0.0015 0.046 0.0015" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+
+            <geom name="edge_z_pp" type="box" pos="0.046 0.046 0"
+                  size="0.0015 0.0015 0.046" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_z_pn" type="box" pos="0.046 -0.046 0"
+                  size="0.0015 0.0015 0.046" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_z_np" type="box" pos="-0.046 0.046 0"
+                  size="0.0015 0.0015 0.046" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+            <geom name="edge_z_nn" type="box" pos="-0.046 -0.046 0"
+                  size="0.0015 0.0015 0.046" material="edge_mat"
+                  contype="0" conaffinity="0" mass="0"/>
+
+            <geom name="yaw_arrow_shaft"
+                  type="box"
+                  pos="0.014 0 0.049"
+                  size="0.018 0.003 0.002"
+                  material="yaw_arrow_mat"
+                  contype="0"
+                  conaffinity="0"
+                  mass="0"/>
+            <geom name="yaw_arrow_head_left"
+                  type="box"
+                  pos="0.031 0.004 0.049"
+                  euler="0 0 -35"
+                  size="0.009 0.0025 0.002"
+                  material="yaw_arrow_mat"
+                  contype="0"
+                  conaffinity="0"
+                  mass="0"/>
+            <geom name="yaw_arrow_head_right"
+                  type="box"
+                  pos="0.031 -0.004 0.049"
+                  euler="0 0 35"
+                  size="0.009 0.0025 0.002"
+                  material="yaw_arrow_mat"
+                  contype="0"
+                  conaffinity="0"
+                  mass="0"/>
+        </body>
+
+        <!-- 胶囊形小棍 pusher：端头朝向 cube 的 +X 面，后续由平面控制轨迹推动 -->
+        <body name="rod_pusher" pos="0.094 0 0.045" euler="0 0 180">
+            <joint name="pusher_x" type="slide" axis="1 0 0" damping="0.02"/>
+            <joint name="pusher_y" type="slide" axis="0 1 0" damping="0.02"/>
+            <joint name="pusher_yaw" type="hinge" axis="0 0 1" damping="0.001"/>
+
+            <!-- 胶囊的 +local-x 端是 fingertip；初始位置与 cube +X 面之间留小间隙 -->
+            <geom name="rod_pusher_geom"
+                  type="capsule"
+                  fromto="-0.035 0 0 0.035 0 0"
+                  size="0.004"
+                  mass="0.03"
+                  material="pusher_mat"
+                  contype="1"
+                  conaffinity="2"
+                  friction="1.0 0.005 0.0001"
+                  condim="4"/>
+
+            <!-- 黄色小球只标出当前语义上的 fingertip，不参与碰撞 -->
+            <geom name="rod_pusher_tip_marker"
+                  type="sphere"
+                  pos="0.035 0 0"
+                  size="0.006"
+                  material="pusher_tip_mat"
+                  contype="0"
+                  conaffinity="0"
+                  mass="0"/>
+        </body>
+    </worldbody>
+
+</mujoco>
